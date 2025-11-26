@@ -67,13 +67,11 @@ If your backend serves static files, configure Express to use the frontend folde
 app.use(express.static(path.join(__dirname, 'public')))
 
 ## API
-This README doesn't assume exact endpoint names. Add or update the following section with your project's actual routes.
 
 Common endpoints (examples)
-- POST /api/auth/register — register user
-- POST /api/auth/login — log in and receive JWT
-- GET /api/wallet — get wallet info (protected)
-- POST /api/transaction — create a transaction (protected)
+-  /api/v1/user — user related stuff
+-  /api/v1/expense/ — for expenses
+-  /api/v1/goals — add goals
 
 Protect routes using JWT middleware and verify tokens with JWT_SECRET.
 
@@ -90,27 +88,13 @@ Adjust to match your repo. Example:
 - Use environment-specific configuration and a secrets manager.
 - Validate and sanitize user input before writing to the database.
 
-## Testing
+## Something that can be added
+- Use zod in backend for user data-validation
 - Add tests for backend endpoints (e.g., using Jest + supertest).
-- Test CORS, authentication flow, and DB error handling.
+- Signin or signup(use passportjs) using google or facebook.
+- If user increases we can use pipeline for data analyzing and calculation.
 
 ## Contributing
 - Fork the repo
 - Create a feature branch
-- Open a PR with a clear description of changes
-
-## License
-Add your chosen license here (e.g., MIT). Example:
-MIT © ayushshh
-
-## Contact
-Maintainer: ayushshh
-(Include email or other contact info if desired)
-
----
-
-If you'd like, I can:
-- Create a ready-to-commit README.md file in the repository for you,
-- Or update the README with actual API routes and folder structure if you paste them here.
-
-Which would you prefer?
+- Open a PR with a clear description of changes.
