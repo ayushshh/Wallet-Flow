@@ -1,5 +1,3 @@
-GitHub Copilot Chat Assistant
-
 # Wallet-Flow
 
 A simple wallet/flow demo with a plain HTML/CSS/JavaScript frontend and an Express + MongoDB backend. This README provides installation, configuration, and run instructions plus helpful placeholders you can update with project-specific details.
