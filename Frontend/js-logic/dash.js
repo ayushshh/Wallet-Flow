@@ -1,6 +1,6 @@
 // Base URL for your Backend API
 // Ensure this matches your backend port (e.g., 5000 or 8000)
-const API_BASE = "http://localhost:443/api/v1";
+const API_BASE = "https://wallet-flow-backend.onrender.com/api/v1";
 
 // --- DOM Elements ---
 const expenseForm = document.getElementById("expenseForm");

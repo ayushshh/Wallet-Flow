@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:443/api/v1/users";
+const API_URL = "https://wallet-flow-backend.onrender.com/api/v1/users";
 
 document.addEventListener("DOMContentLoaded", () => {
     const signupForm = document.getElementById("signupForm");
