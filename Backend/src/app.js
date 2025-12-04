@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(cookieParser());
 
 app.use(cors({
-    origin: process.env.CORS_ORIGIN || "http://localhost:3000",
+    origin: process.env.CORS_ORIGIN || "https://wallet-flow-starter.vercel.app",
     credentials: true // This allows cookies to be sent back and forth
 }));
 
