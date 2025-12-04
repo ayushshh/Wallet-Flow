@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WalletFlow-signup</title>
+    <style>
+        body {
+            background-image: url(./images/backpic.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        body #sign-up {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section {
+            width: 10px;
+            height: 800px;
+        }
+
+        form {
+            margin-left: 5%;
+            border-radius: 50px;
+            width: 500px;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(192, 229, 234, 0.425);
+            backdrop-filter: blur(10px);
+            box-shadow: 1px 1px 1px 1px rgba(213, 244, 244, 0.284);
+            animation-name: form;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-direction: ease-out;
+
+        }
+
+        @keyframes form {
+            0% {
+                transform: translate(0);
+                opacity: 0;
+
+            }
+
+            100% {
+                transform: translate(0);
+                opacity: 1;
+            }
+        }
+
+        input {
+            height: 30px;
+            border-color: rgba(240, 248, 255, 0);
+            border-radius: 80px;
+            margin: 10px;
+            padding-left: 10px;
+            width: 90%;
+        }
+        
+        button {
+            margin-top: 2%;
+            margin-bottom: 5%;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0);
+            background-color: #0284c7;
+            color: aliceblue;
+            border-radius: 20px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0369a1;
+        }
+
+        a {
+            text-decoration: none;
+            color: aliceblue;
+            margin-left: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="sign-up">
+        <form id="signupForm">
+            <div style="text-align: center;">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <br>
+                <input type="text" id="username" placeholder="Username" required minlength="4">
+                <input type="password" id="password" placeholder="Password" required minlength="6">
+                <br>
+                <input type="email" id="email" placeholder="Email" required>
+                <br>
+                <button type="submit">Sign Up</button>
+                <a href="./login.html">already a user login here</a>
+            </div>
+        </form>
+    </section>
+
+    <script src="./js-logic/signup.js"></script>
+</body>
+
+</html>
