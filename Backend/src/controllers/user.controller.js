@@ -10,10 +10,10 @@ const generateToken = (id) => {
 };
 
 const cookieOptions = {
-    httpOnly: true, 
-    secure: process.env.NODE_ENV === 'production', // Use SSL in production
-    // sameSite: 'strict', // CSRF protection
-    // maxAge: 30 * 24 * 60 * 60 * 1000 // 30 days
+  httpOnly: true,
+  secure: process.env.NODE_ENV === 'production', // Render + Vercel are HTTPS
+  sameSite: 'None', // required for cross-origin cookies
+  maxAge: 30 * 24 * 60 * 60 * 1000 // 30 days
 };
 
 const registerUser = asyncHandler(async (req, res) => {
